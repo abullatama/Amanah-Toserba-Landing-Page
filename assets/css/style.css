@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+* {
+    box-sizing : border-box;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 0;
+    margin:0;
+    width: 100%;
+}
+
+img{
+    object-fit: cover;
+    object-position: center;
+}
+
+/* header */
+header{
+    display: inline;
+}
+
+.container{
+    width:100%;
+    position: fixed;
+    top: 0;
+    background: white;
+}
+
+.top-nav{
+    padding: 5px;
+    background-color:white ;
+    overflow: auto;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bot-nav{
+    background: white;
+    margin: 0px 0px 20px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+}
+
+.bot-nav li:hover{
+    background:#87CEFA;
+}
+
+.active{
+    display: inline;
+}
+
+.bot-nav ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bot-nav li{
+    padding: 20px 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.logo{
+    float: left;
+    width: 70%;
+    margin: 5px 0px 10px 200px;
+    padding: 0px 10px 0px 10px;
+    min-height: 40px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.top-list li{
+    padding: 10px;
+    display: inline;
+    font-family: "Roboto Condensed", sans-serif;
+    cursor: pointer;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+.top-list a:hover{
+    color: #87CEFA;
+}
+.bot-list a:hover{
+    color: black;
+}
+.toggle{
+    height: 100%;
+    float: right;
+    display: none;
+    margin: 20px 70px 20px 0px;
+    cursor: pointer;
+}
+
+#toggle{
+    color: #ffb341;
+}
+
+#toggle:hover{
+    color:#87CEFA;
+}
+
+.top-list{
+    float: right;
+    width:35%;
+    margin-right:100px
+}
+/* header */
+
+/* main */
+#content{
+    width: 100%;
+    height: 100%;
+}
+
+#beranda{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff 1%, #87CEFA 100%);
+    margin-top: 100px;
+}
+
+.shapes{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: url(../image/img/wave-d.png) 100% 100% no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+
+.box-first{
+    flex-basis: 50%;
+    color: white;
+    margin-bottom: 150px;
+}
+
+.shop-image{
+    display: block;
+    width: 550px;
+    margin: 0 auto;
+    margin-left: 150px;
+}
+
+#slogan{
+    width: 500px;
+    color: black;
+    text-align: left;
+    font-size: 17px;
+    margin: 0 auto;
+}
+
+#hubungi{
+    margin : 100px 0px 0px 0px;
+    background-color: #ffc75e;
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: max-content;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#fitur{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 100px;
+
+}
+
+.fitur-flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
+}
+
+.fitur-box{
+    flex-basis: 40%;
+    height: 290px;
+}
+
+.double{
+    flex-basis: 60%;
+}
+
+.double p{
+    width: 70%;
+    text-align: justify;
+}
+
+.fitur-image{
+    width: 275px;
+    margin-left: 250px;
+    padding: 20px;
+    display: block;
+
+}
+
+#information{
+    margin-top: 70px;
+    color: #ffb341;
+    font-size: 20px;
+}
+
+#tentang-kami{
+    height: 100%;
+    padding: 50px;
+    margin-bottom: 50px;
+    background: linear-gradient(0deg, rgba(255,102,65,1) 0%, rgba(255,179,65,1) 66%);
+}
+
+.tk{
+    flex-grow: 1;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    /* padding: 10px 50px; */
+    width: 1000px;
+}
+
+.tk-box{
+    width: 100% ;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 0px 20px;
+    box-shadow: 0px 0px 8px -1px rgba(255,255,255,1);
+    cursor: pointer;
+    background: white;
+}
+
+.tk-box:hover{
+    box-shadow: 0px 0px 68px 9px rgba(255,255,255,0.7);
+}
+
+.tk-box-column{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.tk-double{
+    flex-basis: 50%;
+    text-align: center;
+    padding: 30px;
+}
+
+#tk-image{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+
+.gambar {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  .kontak-image {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .close:hover{
+      color: #87CEFA;
+  }
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+/* #kontak{
+    background-color: #a7dbd8;
+} */
+
+.kontak-title{
+    flex: 1;
+
+    text-align: center; 
+    padding: 20px; 
+    margin: 0 auto;
+}
+
+.kontak-content{
+    margin: 0 auto;
+    height: 100%;
+    
+}
+
+.kontak-info{
+    flex: 1;
+    padding: 30px 0px 30px 0px;
+}
+
+.kontak-map li{
+    padding: 20px;
+    display: inline;
+    cursor: pointer;
+}
+
+.kontak-info{
+    text-align: center;
+    margin : 0 auto;
+}
+
+.kontak-map{
+    flex: 2;
+    margin-bottom: 50px;
+}
+
+.kontak-map img{
+    width: 700px;
+    /* width: 50%; */
+    margin: auto;
+    display: block;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 54px 1px rgba(255,179,65,0.54);
+    cursor: pointer;
+    background-color: white;
+}
+
+.kontak-map img:hover{
+    box-shadow: 0px 0px 74px 5px rgba(255,179,65,0.54);
+}
+
+#biodata{
+    background: linear-gradient(to top, #ffffff 1%, #6495ED 100%);
+    width: auto;
+    height: 100%;
+}
+
+.biodata-image{
+    margin: 20px auto;
+    display: block;
+    height: 150px;
+    width:  150px;
+    border-radius: 50%;
+}   
+
+.biodata-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.biodata{
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#biodata-column{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+
+}
+
+.biodata-row{
+    flex-basis: 40%;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.biodata-row-a{
+    flex-basis: 60%;
+}
+
+.biodata li{
+    flex: 1;
+    padding: 10px;
+}
+/* main */
+
+footer{
+    width: 100%;
+    height: 100%;
+    background: rgb(36, 36, 36);
+}
+
+footer p{
+    display: block; 
+    margin: 0 auto;
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 1330px){
+    .shop-image{
+        margin-left: 80px;
+    }
+    .fitur-image{
+        margin-right: 50px;
+    }
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    nav{
+        padding: 0px;
+    }
+    
+    .logo{
+        margin: 10px 0px 0px 100px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    nav li{
+        text-align: left;
+    }
+    
+    nav ul{
+        margin-right:100px
+    }
+ }
+
+ @media screen and (max-width: 1175px){
+    .shop-image{
+        width: 500px;
+    }
+    #slogan{
+        width: 350px;
+    }
+    .fitur-image{
+        margin-left: 200px;
+    }
+    
+    .double{
+        flex-basis: 60%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .tk{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    .tk-box{
+        flex-direction: row;
+        height: 200px;
+        width: 700px;
+        margin:0 auto;
+        margin-bottom: 20px;
+    }
+    .tk-box-column{
+        flex-basis: 40%;
+    }
+    .tk-double{
+        flex-basis: 60%;
+    }
+    .tk-double p{
+        text-align: left;
+    }
+    .fitur-image{
+        margin-top: 30px;
+    }
+}
+
+ @media screen and (max-width: 950px){
+    .shop-image{
+        width: 450px;
+    }
+    #slogan{
+        width: 250px;
+    }
+    
+    #hubungi{
+        margin-top: 50px;
+    }
+    .fitur-image{
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .shop-image{
+        margin-left: 50px;
+        width: 400px;
+    }
+}
+ @media screen and (max-width: 890px) {
+     .kontak-map img{
+         width: 550px;
+     }
+    .top-nav ul{
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+    }
+    .logo{
+        margin: 10px 0px 0px 0px;
+    }
+    .fitur-image{
+        margin-left: 100px;
+    }
+ }
+
+ @media screen and (min-width: 890px) {
+    .bot-nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .tk-box{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 750px){
+    .kontak-map img{
+        width: 450px;
+    }
+    .kontak-map li{
+        padding: 10px;
+        width: 450px;
+    }
+}
+
+ @media screen and (max-width: 720px){
+    .shapes{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-first{
+        margin: 0 auto;
+    }
+    .shop-image{
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    #slogan{
+        width: 400px;
+        text-align: center;
+    }
+    #hubungi{
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .fitur-flex-row{
+        display: flex;
+        flex-direction: column;
+        /* flex-grow: 1;
+        margin-bottom: 20px;
+        margin-top: 20px; */
+    }
+    .fitur-box{
+        flex-basis: 50%;
+        height: 290px;
+        margin: 0 auto;
+    }
+    #information{
+        margin: 30px auto;
+    }
+    .double{
+        flex-basis: 50%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    .double p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .fitur-image{
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .tk-box{
+        flex-direction: column;
+        height: 100%;
+        width: 400px;
+        margin-bottom: 50px;
+    }
+    .tk-double p{
+        text-align: center;
+    }
+    .kontak-map ul{
+        width: 320px;
+    }
+ }
+
+ @media screen and (max-width: 650px) {
+    .kontak-map img{
+        width: 350px;
+    }
+ }
+
+ @media screen and (max-width: 520px) {
+    .tk-box{
+        width: 300px;
+        margin-bottom: 50px;
+    }
+ }
+ 
+ @media screen and (max-width: 500px) {
+    .toggle{
+        margin: 20px 25px 20px 0px;
+    }
+    .logo{
+        margin: 10px 0px 0px 0px;
+    }
+    .bot-nav{
+        margin:0 auto ;
+        min-width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 470px){
+     /* .box-first{
+     } */
+    .shop-image{
+        width: 300px;
+        margin-top: 40px;
+    }
+    #slogan{
+        width: 300px;
+        margin-bottom: 150px;
+    }
+}
+@media screen and (max-width: 420px){
+    .biodata{
+        width: 300px;
+        font-size: 17px;
+    }
+    .biodata-image{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .tk-box{
+        width: 220px;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+    .kontak-map img{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .logo{
+        width: 80%;
+        object-fit: scale-down;
+    }
+    .shop-image{
+        width: 250px;
+        margin-top: 40px;
+    }
+    #slogan{
+        width: 250px;
+        margin-bottom: 150px;
+    }
+    .fitur-image{
+        width: 200px;
+    }
+    .kontak-map img{
+        width: 280px;
+    }
+    .kontak-map ul{
+        width: 200px;
+    }
+    .kontak-map li{
+        display: block;
+        width: 100%;
+    }
+}
